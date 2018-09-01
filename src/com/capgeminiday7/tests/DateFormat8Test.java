@@ -12,7 +12,7 @@ class DateFormat8Test {
 		
 		void testWeekDay() {
 			
-			assertEquals("Saturday,September 08,2018",WeekDay.displayWeekDay());
+			assertEquals("Saturday,September 01,2018",WeekDay.displayWeekDay());
 			 
 		}
 
