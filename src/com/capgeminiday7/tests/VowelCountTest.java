@@ -14,7 +14,7 @@ class VowelCountTest {
 	void test() {
 		
 				File file=new File("C:\\navya\\String.txt");
-				assertEquals(19,VowelCount.Vowels(file));
+				assertEquals(9,VowelCount.Vowels(file));
 			}
 	
 	}

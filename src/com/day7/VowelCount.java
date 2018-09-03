@@ -7,8 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class VowelCount {
-	static int count = 0;
-	static int count1 = 0;
+	static int vowels = 0;
+	static int cons = 0;
 
 	public static int Vowels(File file) {
 
@@ -20,19 +20,21 @@ public class VowelCount {
 					char c = s.charAt(i);
 					if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' || c == 'a' || c == 'e' || c == 'i'
 							|| c == 'o' || c == 'u') {
-						count = count + 1;
-					}
-					else {
-						count1 = count1 + 1;
-					}
-				}
-			}
+						vowels = vowels + 1;
 
+					}
+
+					else 
+						cons++;
+				}
+				
+			}
 		} 
 			catch(IOException e) {
 
 			e.printStackTrace();
-		}
-		return count;
+			}
+		
+	return vowels -1;
 	}
 }
